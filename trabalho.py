@@ -10,7 +10,6 @@ def calculo(entrada, estados, estado_inicial, estado_final, alfabeto, regras, es
             return 'Entrada sem transicao'
             continue
         else:
-            print(regras[(estado_presente, entrada[i])])
             estado_presente = regras[(estado_presente, entrada[i])]
 
     if estado_presente == estado_final:
