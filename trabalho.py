@@ -5,6 +5,7 @@ def calculo(entrada, estados, estado_inicial, estado_final, alfabeto, regras, es
             if entrada[i] not in alfabeto:
                 return 'simbolo desconhecido'
             else:
+                print(str(estado_presente) + " recebe " + str(entrada[i]) + " -> " + str(regras[(estado_presente, entrada[i])]))
                 regras[(estado_presente, entrada[i])]
         except:
             return 'Entrada sem transicao'
